@@ -47,20 +47,56 @@
 		throw new Exception("Error Processing Request, Function not found.");
 	}
 
+	if(file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]."flx_actions.php")) {
+		//get the actions variable
+		include $flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]."flx_actions.php";
+	}
+	else {
+		throw new Exception("Error Processing Request, flx_actions.php not found.");
+	}
 
-	echo "<pre>";
-	var_dump($flexaction);
-	var_dump($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]);
-	echo "</pre>";
+	if	(
+			(!isset($flexaction['actions'][$flexaction['action']])) ||
+			(!file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].$flexaction['actions'][$flexaction['action']]))
+		) {
+		//throw exception if the function being requested does not exist
+		throw new Exception("Error Processing Request, Action not found.");
+	}
 
-/* buffering into variable
-<?php ob_start(); ?>
+	if(file_exists('flx_menu.php')) {
+		//include root functions throw error when it does not exist
+		ob_start();
+		include 'flx_menu.php';
+		$flexaction['menu'] = ob_get_clean();
+	}
+	else {
+		throw new Exception("Error Processing Request, flx_menu.php not found.");
+	}
 
-<html>
-   <head>...</head>
-   <body>...<?php echo $another_variable ?></body>
-</html>
+	if(file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].'flx_settings.php')) {
+		//include the function settings if it exists
+		include $flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].'flx_settings.php';
+	}
 
-<?php $variable = ob_get_clean(); ?>
-*/
+	if(file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].$flexaction['actions'][$flexaction['action']])) {
+		//go out and get content and save it to a variable
+		ob_start();
+		include $flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].$flexaction['actions'][$flexaction['action']];
+		$flexaction['layout'] = ob_get_clean();
+	}
+	else {
+		throw new Exception("Error Processing Request, Action file not found.");
+	}
+
+	if(file_exists('flx_layout.php')) {
+		//go out and get content and save it to a variable
+		ob_start();
+		include 'flx_layout.php';
+		$totalpage = ob_get_clean();
+	}
+	else {
+		throw new Exception("Error Processing Request, flx_layout.php not found.");
+	}
+
+	echo $totalpage;
 ?>
