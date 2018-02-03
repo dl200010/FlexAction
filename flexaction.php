@@ -52,4 +52,15 @@
 	var_dump($flexaction);
 	var_dump($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]);
 	echo "</pre>";
+
+/* buffering into variable
+<?php ob_start(); ?>
+
+<html>
+   <head>...</head>
+   <body>...<?php echo $another_variable ?></body>
+</html>
+
+<?php $variable = ob_get_clean(); ?>
+*/
 ?>
