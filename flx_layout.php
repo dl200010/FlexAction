@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Flexaction Temp Layout</title>
+		<title>FlexAction Temp Layout</title>
 	</head>
 	<body>
 		<section>
