@@ -6,7 +6,8 @@
 		include 'flx_config.php';
 	}
 	else {
-		throw new Exception("Error Processing Request, flx_config.php not found.");
+		echo "Error Processing Request, config file not found.";
+		die();
 	}
 
 	//check to see if the action exists and that it contains a period
@@ -28,7 +29,8 @@
 		include 'flx_functions.php';
 	}
 	else {
-		throw new Exception("Error Processing Request, flx_functions.php not found.");
+		echo "Error Processing Request, functions file not found.";
+		die();
 	}
 
 	//include the root settings if it exists
@@ -44,7 +46,8 @@
 				(!file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]))
 			)
 		) {
-		throw new Exception("Error Processing Request, Function not found.");
+		echo "Error Processing Request, function not found.";
+		die();
 	}
 
 	//get the actions variable
@@ -52,7 +55,8 @@
 		include $flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']]."flx_actions.php";
 	}
 	else {
-		throw new Exception("Error Processing Request, flx_actions.php not found.");
+		echo "Error Processing Request, actions file not found.";
+		die();
 	}
 
 	//throw exception if the function being requested does not exist
@@ -60,7 +64,8 @@
 			(!isset($flexaction['actions'][$flexaction['action']])) ||
 			(!file_exists($flexaction['flx_root_path'].$flexaction['functions'][$flexaction['function']].$flexaction['actions'][$flexaction['action']]))
 		) {
-		throw new Exception("Error Processing Request, Action not found.");
+		echo "Error Processing Request, action not found.";
+		die();
 	}
 
 	//include root functions throw error when it does not exist
@@ -70,7 +75,8 @@
 		$flexaction['menu'] = ob_get_clean();
 	}
 	else {
-		throw new Exception("Error Processing Request, flx_menu.php not found.");
+		echo "Error Processing Request, menu file not found.";
+		die();
 	}
 
 	//include the function settings if it exists
@@ -85,7 +91,8 @@
 		$flexaction['layout'] = ob_get_clean();
 	}
 	else {
-		throw new Exception("Error Processing Request, Action file not found.");
+		echo "Error Processing Request, action file not found.";
+		die();
 	}
 
 	//go out and get content and save it to a variable
@@ -95,7 +102,8 @@
 		$totalpage = ob_get_clean();
 	}
 	else {
-		throw new Exception("Error Processing Request, flx_layout.php not found.");
+		echo "Error Processing Request, layout file not found.";
+		die();
 	}
 
 	//display already built page
