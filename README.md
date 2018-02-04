@@ -1,4 +1,4 @@
-Fluxaction framework for PHP.
+FluxAction framework for PHP.
 
 
    Copyright 2018 DL200010 <DL200010@gmail.com>
