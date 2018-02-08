@@ -1,5 +1,6 @@
 <?php
 	//here will be the functions part where each function will be mapped to a folder
 	$flexaction['functions']['home'] = "/";
-	$flexaction['functions']['test'] = "/test/";
+	$flexaction['functions']['elements'] = "/elements/";
+	$flexaction['functions']['generic'] = "/generic/";
 ?>
