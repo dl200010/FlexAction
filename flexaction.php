@@ -67,9 +67,9 @@
 	if(file_exists($flexaction['flx_root_path'].$flexaction['functionfolder']."flx_actions.php")) {
 		include $flexaction['flx_root_path'].$flexaction['functionfolder']."flx_actions.php";
 	}
-	else {
-		echo "Error Processing Request, actions file not found.";
-		die();
+
+	if(!isset($flexaction['actionfile'])) {
+		$flexaction['actionfile'] = "dsp_" . $flexaction['action'] . ".php" ;
 	}
 
 	//throw exception if the function being requested does not exist

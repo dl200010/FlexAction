@@ -25,7 +25,7 @@
 			<ul>
 				<li><a href="?action=home.home">Homepage</a></li>
 				<li><a href="?action=generic.home">Generic</a></li>
-				<li><a href="?action=elements.home">Elements</a></li>
+				<li><a href="?action=elements.elements">Elements</a></li>
 				<li>
 					<span class="opener">Submenu</span>
 					<ul>
