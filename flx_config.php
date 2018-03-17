@@ -22,6 +22,6 @@
 
 	//the files to pull in for the layout and menu.
 	//change these two inside the flx_settings if a different layout and menu is desired
-	$flexaction['layout'] = 'layout.php';
-	$flexaction['menu'] = 'menu.php';
+	$flexaction['layout_file'] = 'layout.php';
+	$flexaction['menu_file'] = 'menu.php';
 ?>

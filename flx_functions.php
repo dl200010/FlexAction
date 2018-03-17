@@ -19,14 +19,13 @@
 	//this file can be excluded as long as the function exactly matches the folder name
 	switch ($flexaction['function']) {
 		case 'home':
-			$flexaction['functionfolder'] = "/";
+			$flexaction['function_folder'] = "/";
 			break;
 		case 'elements':
-			$flexaction['functionfolder'] = "/elements/";
+			$flexaction['function_folder'] = "/elements/";
 			break;
 		case 'generic':
-			$flexaction['functionfolder'] = "/generic/";
+			$flexaction['function_folder'] = "/generic/";
 			break;
-		default:
 	}
 ?>

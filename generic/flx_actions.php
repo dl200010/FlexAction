@@ -19,7 +19,7 @@
 	//this file can be excluded as long as every action matches dsp_{ACTION}.php
 	switch ($flexaction['action']) {
 		case 'home':
-			$flexaction['actionfile'] = "dsp_generic.php";
+			$flexaction['action_file'] = "dsp_generic.php";
 			break;
 		default:
 	}
