@@ -21,12 +21,12 @@
 
 				<!-- Main -->
 					<div id="main">
-						<?php echo $flexaction['layout']; ?>
+						<?php echo $flexaction['page_display']; ?>
 					</div>
 
 				<!-- Sidebar -->
 					<div id="sidebar">
-						<?php echo $flexaction['menu']; ?>
+						<?php echo $flexaction['menu_display']; ?>
 					</div>
 
 			</div>

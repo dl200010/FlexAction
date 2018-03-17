@@ -36,7 +36,7 @@
 	else {
 		//get link to redirect to with the url parameter of 'action' and redirect back to self with
 		$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[SCRIPT_NAME]";
-		header("Location: " . $actual_link . "?action=" . $flexaction['flx_action_empty']);
+		header("Location: " . $actual_link . "?action=" . $flexaction['empty_action']);
 		die();
 	}
 
@@ -79,10 +79,10 @@
 	}
 
 	//include root functions throw error when it does not exist
-	if(file_exists('flx_menu.php')) {
+	if(file_exists($flexaction['menu'])) {
 		ob_start();
-		include 'flx_menu.php';
-		$flexaction['menu'] = ob_get_clean();
+		include $flexaction['menu'];
+		$flexaction['menu_display'] = ob_get_clean();
 	}
 	else {
 		echo "Error Processing Request, menu file not found.";
@@ -97,12 +97,12 @@
 	//go out and get content and save it to a variable
 	ob_start();
 	include $flexaction['flx_root_path'].$flexaction['functionfolder'].$flexaction['actionfile'];
-	$flexaction['layout'] = ob_get_clean();
+	$flexaction['page_display'] = ob_get_clean();
 
 	//go out and get content and save it to a variable
-	if(file_exists('flx_layout.php')) {
+	if(file_exists($flexaction['layout'])) {
 		ob_start();
-		include 'flx_layout.php';
+		include $flexaction['layout'];
 		$totalpage = ob_get_clean();
 	}
 	else {
