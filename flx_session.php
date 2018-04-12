@@ -16,8 +16,8 @@
 	 */
 
 	/*
-	 *  use this file to add settings
+	 *  this file should be where session start up stuff is done
 	 *  it can be left out as well
 	 */
-	$flexaction['tempglobalsetting'] = "tempvalue";
+	//session_start();
 ?>
