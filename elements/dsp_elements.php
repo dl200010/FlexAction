@@ -7,7 +7,7 @@
 
 	<!-- Header -->
 		<header id="header">
-			<a href="?action=home.home" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+			<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
 			<ul class="icons">
 				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -27,24 +27,24 @@
 				<h2 id="content">Sample Content</h2>
 				<p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.</p>
 				<div class="row">
-					<div class="6u 12u$(small)">
+					<div class="col-6 col-12-small">
 						<h3>Sem turpis amet semper</h3>
 						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 					</div>
-					<div class="6u$ 12u$(small)">
+					<div class="col-6 col-12-small">
 						<h3>Magna odio tempus commodo</h3>
 						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan.</p>
 					</div>
 					<!-- Break -->
-					<div class="4u 12u$(medium)">
+					<div class="col-4 col-12-medium">
 						<h3>Interdum sapien gravida</h3>
 						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
 					</div>
-					<div class="4u 12u$(medium)">
+					<div class="col-4 col-12-medium">
 						<h3>Faucibus consequat lorem</h3>
 						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
 					</div>
-					<div class="4u$ 12u$(medium)">
+					<div class="col-4 col-12-medium">
 						<h3>Accumsan montes viverra</h3>
 						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
 					</div>
@@ -54,8 +54,8 @@
 
 			<!-- Elements -->
 				<h2 id="elements">Elements</h2>
-				<div class="row 200%">
-					<div class="6u 12u$(medium)">
+				<div class="row gtr-200">
+					<div class="col-6 col-12-medium">
 
 						<!-- Text stuff -->
 							<h3>Text</h3>
@@ -73,7 +73,7 @@
 						<!-- Lists -->
 							<h3>Lists</h3>
 							<div class="row">
-								<div class="6u 12u$(small)">
+								<div class="col-6 col-12-small">
 
 									<h4>Unordered</h4>
 									<ul>
@@ -90,7 +90,7 @@
 									</ul>
 
 								</div>
-								<div class="6u$ 12u$(small)">
+								<div class="col-6 col-12-small">
 
 									<h4>Ordered</h4>
 									<ol>
@@ -132,35 +132,35 @@
 
 							<h4>Actions</h4>
 							<ul class="actions">
-								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button primary">Default</a></li>
 								<li><a href="#" class="button">Default</a></li>
 							</ul>
 							<ul class="actions small">
-								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button primary small">Small</a></li>
 								<li><a href="#" class="button small">Small</a></li>
 							</ul>
 							<div class="row">
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
 										<li><a href="#" class="button">Default</a></li>
 									</ul>
 								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small">Small</a></li>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
 										<li><a href="#" class="button small">Small</a></li>
 									</ul>
 								</div>
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special fit">Default</a></li>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
 										<li><a href="#" class="button fit">Default</a></li>
 									</ul>
 								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small fit">Small</a></li>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
 										<li><a href="#" class="button small fit">Small</a></li>
 									</ul>
 								</div>
@@ -279,38 +279,38 @@
 							</div>
 
 					</div>
-					<div class="6u$ 12u$(medium)">
+					<div class="col-6 col-12-medium">
 
 						<!-- Buttons -->
 							<h3>Buttons</h3>
 							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button primary">Primary</a></li>
 								<li><a href="#" class="button">Default</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="#" class="button big">Big</a></li>
+								<li><a href="#" class="button large">Large</a></li>
 								<li><a href="#" class="button">Default</a></li>
 								<li><a href="#" class="button small">Small</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="#" class="button special big">Big</a></li>
-								<li><a href="#" class="button special">Default</a></li>
-								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button primary large">Large</a></li>
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button primary small">Small</a></li>
 							</ul>
 							<ul class="actions fit">
-								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button primary fit">Fit</a></li>
 								<li><a href="#" class="button fit">Fit</a></li>
 							</ul>
 							<ul class="actions fit small">
-								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
 								<li><a href="#" class="button fit small">Fit + Small</a></li>
 							</ul>
 							<ul class="actions">
-								<li><a href="#" class="button special icon fa-search">Icon</a></li>
+								<li><a href="#" class="button primary icon fa-search">Icon</a></li>
 								<li><a href="#" class="button icon fa-download">Icon</a></li>
 							</ul>
 							<ul class="actions">
-								<li><span class="button special disabled">Special</span></li>
+								<li><span class="button primary disabled">Primary</span></li>
 								<li><span class="button disabled">Default</span></li>
 							</ul>
 
@@ -318,55 +318,53 @@
 							<h3>Form</h3>
 
 							<form method="post" action="#">
-								<div class="row uniform">
-									<div class="6u 12u$(xsmall)">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
 									</div>
-									<div class="6u$ 12u$(xsmall)">
+									<div class="col-6 col-12-xsmall">
 										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
 									</div>
 									<!-- Break -->
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
 									</div>
 									<!-- Break -->
-									<div class="4u 12u$(small)">
+									<div class="col-4 col-12-small">
 										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
 										<label for="demo-priority-low">Low</label>
 									</div>
-									<div class="4u 12u$(small)">
+									<div class="col-4 col-12-small">
 										<input type="radio" id="demo-priority-normal" name="demo-priority">
 										<label for="demo-priority-normal">Normal</label>
 									</div>
-									<div class="4u$ 12u$(small)">
+									<div class="col-4 col-12-small">
 										<input type="radio" id="demo-priority-high" name="demo-priority">
 										<label for="demo-priority-high">High</label>
 									</div>
 									<!-- Break -->
-									<div class="6u 12u$(small)">
+									<div class="col-6 col-12-small">
 										<input type="checkbox" id="demo-copy" name="demo-copy">
 										<label for="demo-copy">Email me a copy</label>
 									</div>
-									<div class="6u$ 12u$(small)">
+									<div class="col-6 col-12-small">
 										<input type="checkbox" id="demo-human" name="demo-human" checked>
 										<label for="demo-human">I am a human</label>
 									</div>
 									<!-- Break -->
-									<div class="12u$">
+									<div class="col-12">
 										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 									</div>
 									<!-- Break -->
-									<div class="12u$">
+									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="submit" value="Send Message" class="primary" /></li>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</div>
@@ -379,18 +377,18 @@
 							<h4>Fit</h4>
 							<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
 							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
 									<!-- Break -->
-									<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
 									<!-- Break -->
-									<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
 								</div>
 							</div>
 
