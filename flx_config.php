@@ -21,7 +21,8 @@
 	$flexaction['empty_action'] = "home.home";
 
 	//the files to pull in for the layout and menu.
-	//change these two inside the flx_settings if a different layout and menu is desired
+	//change these two inside the flx_settings
+	//if a different layout and menu is desired in the function
 	$flexaction['layout_file'] = 'layout.php';
 	$flexaction['menu_file'] = 'menu.php';
 ?>
