@@ -24,5 +24,4 @@
 	//change these two inside the flx_settings
 	//if a different layout and menu is desired in the function
 	$flexaction['layout_file'] = 'layout.php';
-	$flexaction['menu_file'] = 'menu.php';
 ?>
