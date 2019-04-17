@@ -15,14 +15,14 @@
 	 *  limitations under the License.
 	 */
 
-	//here will be the functions part where each function will be mapped to a folder
-	//this file can be excluded as long as the function exactly matches the folder name
+	/*
+	 *  here will be the functions part where each function will be mapped to a folder
+	 *  this file can be excluded as long as the function exactly matches the folder name
+	 *  notice how the 'elements' function is gone
+	 */
 	switch ($flexaction['function']) {
 		case 'home':
-			$flexaction['function_folder'] = "/";
-			break;
-		case 'elements':
-			$flexaction['function_folder'] = "/elements/";
+			$flexaction['function_folder'] = "/home/";
 			break;
 		case 'generic':
 			$flexaction['function_folder'] = "/generic/";

@@ -15,12 +15,6 @@
 	 *  limitations under the License.
 	 */
 
-	// file to load when action is found
-	// this file can be excluded as long as every action matches dsp_{ACTION}.php
-	switch ($flexaction['action']) {
-		case 'home':
-			$flexaction['action_file'] = "generic_c.php";
-			break;
-		default:
-	}
+	// this is a controller of the MVC
+	include 'homepage_v.php';
 ?>

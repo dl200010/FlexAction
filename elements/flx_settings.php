@@ -15,6 +15,6 @@
 	 *  limitations under the License.
 	 */
 
-	//use this file to add settings
+	// use this file to add settings
 	$flexaction['tempfunctionsetting'] = "tempvalue";
 ?>
