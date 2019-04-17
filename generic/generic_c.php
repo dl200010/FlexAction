@@ -16,6 +16,5 @@
 	 */
 
 	// this is a controller of the MVC
-	include 'generic_m.php';
 	include 'generic_v.php';
 ?>
