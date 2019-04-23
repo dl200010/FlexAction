@@ -16,7 +16,8 @@
 	 */
 
 	/*
-	 *  use this file to add site wide variables
+	 *  use this file to add middleware code
+	 *  this file loads just after the session creation
 	 *  it can be left out as well
 	 */
 	$flexaction['tempglobalvar'] = "tempvalue";

@@ -54,9 +54,9 @@
 		include $flexaction['root_path']."/flx_session_start.php";
 	}
 
-	// include the global vars, if it exists
-	if(file_exists($flexaction['root_path'].'/flx_global_vars.php')) {
-		include $flexaction['root_path'].'/flx_global_vars.php';
+	// include the flx_middleware, if it exists
+	if(file_exists($flexaction['root_path'].'/flx_middleware.php')) {
+		include $flexaction['root_path'].'/flx_middleware.php';
 	}
 
 	// grab the controller and error out if it does not exist
