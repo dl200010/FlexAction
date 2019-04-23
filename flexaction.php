@@ -89,8 +89,13 @@
 		include $flexaction['root_path']."/flx_session_end.php";
 	}
 
-	// go out and get content and save it to a variable
-	if(file_exists($flexaction['root_path'].$flexaction['layout_file'])) {
+	if ($flexaction['layout_file'] == "none")
+	{
+		// dump display data if there is no layout file
+		echo $flexaction['page_display'];
+	}
+	else if(file_exists($flexaction['root_path'].$flexaction['layout_file'])) {
+		// go out and get content and save it to a variable
 		ob_start();
 		include $flexaction['root_path'].$flexaction['layout_file'];
 		echo ob_get_clean();

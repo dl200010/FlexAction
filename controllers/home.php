@@ -18,6 +18,11 @@
 	// This is a controller for MVC
 	// This is also where variables for this controller can be added, before the switch
 	switch ($flexaction['action']) {
+		case 'ajaxreturn':
+			// this is an example of how to return data using web services / ajax
+			$flexaction['action_view'] = "ajaxreturn";
+			$flexaction['layout_file'] = "none";
+			break;
 		case 'home':
 			$flexaction['action_view'] = "homepage";
 			break;
