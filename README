@@ -1,4 +1,4 @@
-FlexAction MVC framework for PHP.
+FlexAction MVC framework for PHP. Requires PHP 7.3.0
 (LICENSE.txt)
 
 
@@ -17,3 +17,16 @@ FlexAction MVC framework for PHP.
    limitations under the License.
 
 ------------------------------------------------------------------------------------
+
+Template SidebarMenu/Light
+            from https://github.com/dl200010/WebsiteTemplates
+
+----------------------------------------------------------------------------
+
+Credits: (license files in each asset)
+   Sidebar Menu: Bootstrapious (MIT) (https://bootstrapious.com/p/bootstrap-sidebar)
+   Bootstrap (https://getbootstrap.com)
+   FontAwesome (https://fontawesome.com)
+   jQuery (https://jquery.com)
+   jQuery Validation (https://jqueryvalidation.org)
+   Lobibox (https://lobianijs.com/site/lobibox)
