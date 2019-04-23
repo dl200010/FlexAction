@@ -19,7 +19,7 @@
 	$flexaction['root_path'] = dirname(__FILE__).'/';
 
 	// setting the layout to the default. change this inside flx_global_vars or the controller
-	$flexaction['layout_file'] = '/views/shared/layout.php';
+	$flexaction['layout_file'] = '/views/shared/_layout.php';
 
 	// setting for empty action default
 	$flexaction['empty_action'] = "home.home";
