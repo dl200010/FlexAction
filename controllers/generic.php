@@ -25,5 +25,8 @@
 			$flexaction['action_view'] = "generic";
 			break;
 		default:
+			//default return "404" to throw a HTTP 404 error
+			$flexaction['action_view'] = "404";
+			break;
 	}
 ?>

@@ -64,7 +64,8 @@
 		include $flexaction['root_path'].'/controllers/'.$flexaction['controller'].'.php';
 	}
 	else {
-		echo "Error Processing Request, controller not found.";
+		//throw a 404 when controller is not found
+		http_response_code(404);
 		die();
 	}
 
@@ -75,6 +76,12 @@
 		ob_start();
 		include $flexaction['root_path'].'/views/'.$flexaction['controller'].'/'.$flexaction['action_view'].'.php';
 		$flexaction['page_display'] = ob_get_clean();
+	}
+	else if ($flexaction['action_view'] == "404")
+	{
+		//throw a 404 when the action_view is 404
+		http_response_code(404);
+		die();
 	}
 
 	// last file to run before displaying and finishing used to save variables before finishing
@@ -89,7 +96,8 @@
 		echo ob_get_clean();
 	}
 	else {
-		echo "Error Processing Request, layout file not found.";
+		//throw a 404 when layout file is not found
+		http_response_code(404);
 		die();
 	}
 ?>
