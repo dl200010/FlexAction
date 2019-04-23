@@ -15,11 +15,14 @@
 	 *  limitations under the License.
 	 */
 
-	// file to load when action is found
-	// this file can be excluded as long as every action matches dsp_{ACTION}.php
+	// This is a controller for MVC
+	// This is also where variables for this controller can be added, before the switch
 	switch ($flexaction['action']) {
 		case 'home':
-			$flexaction['action_file'] = "generic_c.php";
+			// This is including the model of the MVC style.
+			// This file is where the data pulls and manipulations happen.
+			include $flexaction['root_path'].'/models/generic/generic.php';
+			$flexaction['action_view'] = "generic";
 			break;
 		default:
 	}

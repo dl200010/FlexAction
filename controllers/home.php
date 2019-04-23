@@ -15,6 +15,12 @@
 	 *  limitations under the License.
 	 */
 
-	// this is a controller of the MVC
-	include 'homepage_v.php';
+	// This is a controller for MVC
+	// This is also where variables for this controller can be added, before the switch
+	switch ($flexaction['action']) {
+		case 'home':
+			$flexaction['action_view'] = "homepage";
+			break;
+		default:
+	}
 ?>

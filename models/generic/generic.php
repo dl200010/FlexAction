@@ -15,12 +15,5 @@
 	 *  limitations under the License.
 	 */
 
-	// file to load when action is found
-	// this file can be excluded as long as every action matches {ACTION}_c.php
-	switch ($flexaction['action']) {
-		case 'home':
-			$flexaction['action_file'] = "homepage_c.php";
-			break;
-		default:
-	}
+	// This is a model for MVC
 ?>

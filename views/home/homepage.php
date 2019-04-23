@@ -23,6 +23,7 @@
 
 	// this is a view of the MVC
 ?>
+
 <div class="inner">
 
 	<!-- Header -->

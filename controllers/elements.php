@@ -15,17 +15,14 @@
 	 *  limitations under the License.
 	 */
 
-	/*
-	 *  here will be the functions part where each function will be mapped to a folder
-	 *  this file can be excluded as long as the function exactly matches the folder name
-	 *  notice how the 'elements' function is gone
-	 */
-	switch ($flexaction['function']) {
-		case 'home':
-			$flexaction['function_folder'] = "/home/";
+	// This is a controller for MVC
+	// This is also where variables for this controller can be added, before the switch
+	$flexaction['tempcontrollervar'] = "tempvalue";
+	
+	switch ($flexaction['action']) {
+		case 'elements':
+			$flexaction['action_view'] = "elements";
 			break;
-		case 'generic':
-			$flexaction['function_folder'] = "/generic/";
-			break;
+		default:
 	}
 ?>

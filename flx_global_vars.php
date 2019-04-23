@@ -16,8 +16,8 @@
 	 */
 
 	/*
-	 *  use this file to add settings
+	 *  use this file to add site wide variables
 	 *  it can be left out as well
 	 */
-	$flexaction['tempglobalsetting'] = "tempvalue";
+	$flexaction['tempglobalvar'] = "tempvalue";
 ?>
