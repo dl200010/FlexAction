@@ -21,8 +21,10 @@
 		case 'home':
 			// This is including the model of the MVC style.
 			// This file is where the data pulls and manipulations happen.
-			include $flexaction['root_path'].'/models/generic/generic.php';
+			// Setting action_view before calling model,
+			// just in case the model needs to override the view.
 			$flexaction['action_view'] = "generic";
+			include $flexaction['root_path'].'/models/generic/generic.php';
 			break;
 		default:
 			//default return "404" to throw a HTTP 404 error
