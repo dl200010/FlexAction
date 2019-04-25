@@ -16,4 +16,6 @@
 	 */
 
 	// This is a model for MVC
+	// Models should use this notation to return data to view.
+	$flexaction['model']['contenttitle'] = "Generic";
 ?>

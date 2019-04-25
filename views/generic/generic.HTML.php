@@ -18,7 +18,7 @@
 	// this is a view of the MVC
 ?>
 
-<h1>Generic</h1>
+<h1><?php echo $flexaction['model']['contenttitle']; ?></h1>
 
 <span class="image fill"><img src="images/pic11.jpg" alt="" /></span>
 
