@@ -24,10 +24,6 @@
 			// View to use "/views/{controller}/{action_view}.HTML.php"
 			// This can also be set inside the model
 			$flexaction['action_view'] = "generic";
-			// Both of these can be left out if the modal and view
-			// are the same as $flexaction['action']
-			// because both are defaulted to that
-			// It will not crash if either do not exist
 			break;
 		default:
 			//default return "404" to throw a HTTP 404 error

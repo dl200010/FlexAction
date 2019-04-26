@@ -67,10 +67,9 @@
 		$flexaction['GotoEmptyAction']();
 	}
 
-	// Defaulting model and view to the same name as the action
-	// this can be changed in the controller
-	$flexaction['action_model'] = $flexaction['action'];
-	$flexaction['action_view'] = $flexaction['action'];
+	// Defaulting model and view to nothing
+	$flexaction['action_model'] = "";
+	$flexaction['action_view'] = "";
 
 	// Start Session
 	$flexaction['SessionStart']();
