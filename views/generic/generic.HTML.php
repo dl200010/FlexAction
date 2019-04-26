@@ -20,7 +20,7 @@
 
 <h1><?php echo $flexaction['model']['contenttitle']; ?></h1>
 
-<span class="image fill"><img src="images/pic11.jpg" alt="" /></span>
+<span class="image fill"><img src="/images/pic11.jpg" alt="" /></span>
 
 <p>Nunc sit amet nisl a lorem tincidunt sollicitudin ac quis augue. In leo purus, vehicula vel varius ac, tincidunt sed urna. Curabitur eget ex ultrices nisl sodales tincidunt porttitor ultrices ipsum. Nullam tincidunt felis eu eros pretium, auctor malesuada nunc vehicula. Pellentesque pulvinar odio est, ut suscipit ligula bibendum ut. Etiam imperdiet eros leo, eu finibus mi ultricies at. Phasellus faucibus gravida venenatis. Ut tortor lorem, congue eu ligula ac, accumsan vehicula orci. Fusce rutrum eleifend metus placerat vestibulum.</p>
 <p>Suspendisse potenti. Vestibulum ultricies tortor eget lorem sollicitudin, sit amet imperdiet neque pretium. Curabitur lacinia vitae nunc quis blandit. Mauris faucibus nec mauris nec posuere. Maecenas quis nulla sed ante bibendum viverra. Fusce volutpat ipsum est. Sed est est, suscipit eget quam nec, interdum euismod tortor. Praesent suscipit leo quam, vulputate consectetur felis consectetur sed. Fusce volutpat sapien ut pretium pretium.</p>
