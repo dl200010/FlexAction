@@ -35,7 +35,6 @@
 		global $flexaction;
 		$flexaction['SessionEnd']();
 		$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-		// End Session
 		header("Location: " . $actual_link . "?action=" . $flexaction['empty_action']);
 		die();
 	};
@@ -90,16 +89,14 @@
 		die();
 	}
 
-	// This is including the model of the MVC style.
-	// This file is where the data pulls and manipulations happen.
 	if	(file_exists($flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.php')) {
+		// Including the model set in Controller
 		include $flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.php';
 	}
 
 	$flexaction['page_display'] = "";
-	// just don't include if view does not exist
 	if	(file_exists($flexaction['root_path'].'/views/'.$flexaction['controller'].'/'.$flexaction['action_view'].'.HTML.php')) {
-		// go out and get content and save it to a variable
+		// go out and get content of the view and save it to a variable
 		ob_start();
 		include $flexaction['root_path'].'/views/'.$flexaction['controller'].'/'.$flexaction['action_view'].'.HTML.php';
 		$flexaction['page_display'] = ob_get_clean();

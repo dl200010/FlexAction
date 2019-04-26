@@ -19,6 +19,8 @@
 	// This is also where variables for this controller can be added, before the switch
 	switch ($flexaction['action']) {
 		case 'home':
+			// This is including the model of the MVC style.
+			// This file is where the data pulls and manipulations happen.
 			// Model to use "/models/{controller}/{action_model}.php"
 			$flexaction['action_model'] = "generic";
 			// View to use "/views/{controller}/{action_view}.HTML.php"
