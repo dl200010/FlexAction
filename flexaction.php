@@ -132,7 +132,6 @@
 	}
 	else {
 		//throw a 404 when layout file is not found
-		$flexaction['SessionEnd']();
 		http_response_code(404);
 		die();
 	}
