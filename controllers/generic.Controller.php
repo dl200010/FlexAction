@@ -19,12 +19,15 @@
 	// This is also where variables for this controller can be added, before the switch
 	switch ($flexaction['action']) {
 		case 'home':
-			// This is including the model of the MVC style.
-			// This file is where the data pulls and manipulations happen.
-			// Setting action_view before calling model,
-			// just in case the model needs to override the view.
+			// Model to use "/models/{controller}/{action_model}.php"
+			$flexaction['action_model'] = "generic";
+			// View to use "/views/{controller}/{action_view}.HTML.php"
+			// This can also be set inside the model
 			$flexaction['action_view'] = "generic";
-			include $flexaction['root_path'].'/models/generic/generic.php';
+			// Both of these can be left out if the modal and view
+			// are the same as $flexaction['action']
+			// because both are defaulted to that
+			// It will not crash if either do not exist
 			break;
 		default:
 			//default return "404" to throw a HTTP 404 error

@@ -20,10 +20,12 @@
 	switch ($flexaction['action']) {
 		case 'ajaxreturn':
 			// this is an example of how to return data using web services / ajax
+			// View to use "/views/{controller}/{action_view}.HTML.php"
 			$flexaction['action_view'] = "ajaxreturn";
 			$flexaction['layout_file'] = "none";
 			break;
 		case 'home':
+			// View to use "/views/{controller}/{action_view}.HTML.php"
 			$flexaction['action_view'] = "homepage";
 			break;
 		default:
