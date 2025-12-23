@@ -21,7 +21,7 @@
 	
 	switch ($flexaction['action']) {
 		case 'elements':
-			// View to use "/views/{controller}/{action_view}.HTML.php"
+			// View to use "/views/{controller}/{action_view}.View.php"
 			$flexaction['action_view'] = "elements";
 			break;
 		default:

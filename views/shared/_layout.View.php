@@ -34,12 +34,12 @@
 
 	<div class="wrapper">
 
-		<?php include '_menu_side.HTML.php'; ?>
+		<?php include '_menu_side.View.php'; ?>
 
 		<!-- Page Content  -->
 		<div id="content">
 			<?php
-				include '_menu_top.HTML.php';
+				include '_menu_top.View.php';
 				echo $flexaction['page_display'];
 			?>
 		</div>

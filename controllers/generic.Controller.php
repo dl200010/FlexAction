@@ -21,9 +21,9 @@
 		case 'home':
 			// This is including the model of the MVC style.
 			// This file is where the data pulls and manipulations happen.
-			// Model to use "/models/{controller}/{action_model}.php"
+			// Model to use "/models/{controller}/{action_model}.Model.php"
 			$flexaction['action_model'] = "generic";
-			// View to use "/views/{controller}/{action_view}.HTML.php"
+			// View to use "/views/{controller}/{action_view}.View.php"
 			// This can also be set inside the model
 			$flexaction['action_view'] = "generic";
 			break;
