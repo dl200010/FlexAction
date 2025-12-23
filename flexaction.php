@@ -94,9 +94,9 @@
 		$flexaction['action_view'] = "404";
 	}
 
-	if	(file_exists($flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.php')) {
+	if	(file_exists($flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.Model.php')) {
 		// Including the model set in Controller
-		include $flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.php';
+		include $flexaction['root_path'].'/models/'.$flexaction['controller'].'/'.$flexaction['action_model'].'.Model.php';
 	}
 
 	$flexaction['page_display'] = "";
